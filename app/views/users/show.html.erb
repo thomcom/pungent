@@ -1,13 +1,27 @@
 <p>
-  <b>String:</b>
-  <%=h @user.string %>
+  <b>Name:</b>
+  <%=h @user.name %>
 </p>
 
 <p>
-  <b>String:</b>
-  <%=h @user.string %>
+  <b>Email:</b>
+  <%=h @user.email %>
 </p>
 
+<p>
+  <b>Phone:</b>
+  <%=h @user.phone %>
+</p>
+
+<p>
+  <b>RepID:</b>
+  <%=h @user.repID %>
+</p>
+
+<p>
+  <b>Admin:</b>
+  <%=h @user.admin %>
+</p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

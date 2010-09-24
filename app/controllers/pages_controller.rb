@@ -1,11 +1,14 @@
 class PagesController < ApplicationController
-  def jobs
-  end
-
   def admin
   end
 
+  def jobs
+  end
+
   def user
+  end
+
+  def login
   end
 
 end
