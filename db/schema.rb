@@ -9,7 +9,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100924023909) do
+ActiveRecord::Schema.define(:version => 20100926052232) do
+
+  create_table "jobs", :force => true do |t|
+    t.string   "jobID"
+    t.string   "rep"
+    t.string   "name"
+    t.string   "buyer"
+    t.string   "booked"
+    t.string   "date"
+    t.string   "invoice"
+    t.string   "shipped"
+    t.string   "margin"
+    t.string   "commissions"
+    t.string   "paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "things", :force => true do |t|
+    t.string   "what"
+    t.string   "another"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"
