@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  jobID: MyString
+  rep: MyString
+  name: MyString
+  buyer: MyString
+  booked: MyString
+  date: MyString
+  invoice: MyString
+  shipped: MyString
+  margin: MyString
+  commissions: MyString
+  paid: MyString
+
+two:
+  jobID: MyString
+  rep: MyString
+  name: MyString
+  buyer: MyString
+  booked: MyString
+  date: MyString
+  invoice: MyString
+  shipped: MyString
+  margin: MyString
+  commissions: MyString
+  paid: MyString

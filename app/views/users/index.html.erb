@@ -6,7 +6,6 @@
     <th>Email</th>
     <th>Phone</th>
     <th>RepID</th>
-    <th>Admin?</th>
   </tr>
 
 <% @users.each do |user| %>
@@ -15,7 +14,6 @@
     <td><%=h user.email %></td>
     <td><%=h user.phone %></td>
     <td><%=h user.repID %></td>
-    <td><%=h user.admin %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>

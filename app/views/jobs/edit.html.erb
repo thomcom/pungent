@@ -1,0 +1,56 @@
+<h1>Editing job</h1>
+
+<% form_for(@job) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :jobID %><br />
+    <%= f.text_field :jobID %>
+  </p>
+  <p>
+    <%= f.label :rep %><br />
+    <%= f.text_field :rep %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :buyer %><br />
+    <%= f.text_field :buyer %>
+  </p>
+  <p>
+    <%= f.label :booked %><br />
+    <%= f.text_field :booked %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </p>
+  <p>
+    <%= f.label :invoice %><br />
+    <%= f.text_field :invoice %>
+  </p>
+  <p>
+    <%= f.label :shipped %><br />
+    <%= f.text_field :shipped %>
+  </p>
+  <p>
+    <%= f.label :margin %><br />
+    <%= f.text_field :margin %>
+  </p>
+  <p>
+    <%= f.label :commissions %><br />
+    <%= f.text_field :commissions %>
+  </p>
+  <p>
+    <%= f.label :paid %><br />
+    <%= f.text_field :paid %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @job %> |
+<%= link_to 'Back', jobs_path %>

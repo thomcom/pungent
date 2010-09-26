@@ -19,8 +19,7 @@
 </p>
 
 <p>
-  <b>Admin:</b>
-  <%=h @user.admin %>
+<b><%=if(@user.admin==1) then h "Admin"end %></b>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

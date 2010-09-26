@@ -1,0 +1,58 @@
+<p>
+  <b>Jobid:</b>
+  <%=h @job.jobID %>
+</p>
+
+<p>
+  <b>Rep:</b>
+  <%=h @job.rep %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @job.name %>
+</p>
+
+<p>
+  <b>Buyer:</b>
+  <%=h @job.buyer %>
+</p>
+
+<p>
+  <b>Booked:</b>
+  <%=h @job.booked %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @job.date %>
+</p>
+
+<p>
+  <b>Invoice:</b>
+  <%=h @job.invoice %>
+</p>
+
+<p>
+  <b>Shipped:</b>
+  <%=h @job.shipped %>
+</p>
+
+<p>
+  <b>Margin:</b>
+  <%=h @job.margin %>
+</p>
+
+<p>
+  <b>Commissions:</b>
+  <%=h @job.commissions %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%=h @job.paid %>
+</p>
+
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

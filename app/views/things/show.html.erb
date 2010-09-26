@@ -1,0 +1,13 @@
+<p>
+  <b>What:</b>
+  <%=h @thing.what %>
+</p>
+
+<p>
+  <b>Another:</b>
+  <%=h @thing.another %>
+</p>
+
+
+<%= link_to 'Edit', edit_thing_path(@thing) %> |
+<%= link_to 'Back', things_path %>
