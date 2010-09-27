@@ -2,9 +2,6 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    if !signed_in?
-      return false
-    end
     @users = User.all
 
     respond_to do |format|

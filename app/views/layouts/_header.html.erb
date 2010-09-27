@@ -4,11 +4,6 @@
       <li><%= link_to "Home", root_path %></li>
       <% if signed_in? %>
          <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-         <% user = current_user %>
-         <% if user.is_admin? %>
-            <li><%= link_to "Users", users_path %></li>
-            <li><%= link_to "Jobs", jobs_path %></li>
-         <% end %>
       <% else %>
          <li><%= link_to "Sign in", signin_path %></li>
       <% end %>

@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signout '/signout',         :controller => 'sessions', :action=>'destroy'
   map.chpass  '/change_password', :controller => 'sessions', :action=>'chpassword'
 
-  map.root :controller => 'sessions', :action => 'new'
+  map.root :controller => 'sessions', :action => 'enter'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
