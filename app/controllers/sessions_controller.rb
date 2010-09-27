@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         render 'new'
      else
         sign_in user
-        redirect_to jobs
+        redirect_to :jobs
      end
   end
 
@@ -22,6 +22,14 @@ class SessionsController < ApplicationController
   def destroy
      sign_out
      redirect_to root_path
+  end
+
+  def enter
+     if user_from_remember_token.nil?
+        redirect_to :signin
+     else
+        redirect_to :jobs
+     end
   end
 
 end

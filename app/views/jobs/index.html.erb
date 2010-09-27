@@ -15,6 +15,10 @@
     <th>Paid</th>
   </tr>
 
+<% if @jobs.nil? %>
+<%   user = user_from_remember_token %>
+<div id="nojobs"><%=   h 'No jobs for '+user.name+'<'+user.email+'>, rep ID: '+user.repID %><br/></div>
+<% else %>
 <% @jobs.each do |job| %>
   <tr>
     <td><%=h job.jobID %></td>
@@ -32,6 +36,7 @@
     <td><%= link_to 'Edit', edit_job_path(job) %></td>
     <td><%= link_to 'Destroy', job, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
+<% end %>
 <% end %>
 </table>
 

@@ -2,17 +2,20 @@
 
 <% form_for(@job) do |f| %>
   <%= f.error_messages %>
-
+    <% user = user_from_remember_token %>
   <p>
-    <%= f.label :jobID %><br />
-    <%= f.text_field :jobID %>
+    <b><%= f.label :rep %></b><br />
+    <%= user.repID %>
+    <%= f.hidden_field :rep, :value=>user.repID %>
+  </p>    
+  <p>
+    Job #:<br/>
+    <% newest = Job.find_by_sql('SELECT MAX(id) from jobs')%>
+    <% all = Job.all %>
+    <%= f.text_field :jobID, :value=>new_job_id.to_s[-2..3]+all.size.to_s%>
   </p>
   <p>
-    <%= f.label :rep %><br />
-    <%= f.text_field :rep %>
-  </p>
-  <p>
-    <%= f.label :name %><br />
+    Job Name:<br/>
     <%= f.text_field :name %>
   </p>
   <p>
@@ -20,7 +23,7 @@
     <%= f.text_field :buyer %>
   </p>
   <p>
-    <%= f.label :booked %><br />
+    $ Booked but not shipped<br/>
     <%= f.text_field :booked %>
   </p>
   <p>
@@ -28,11 +31,11 @@
     <%= f.text_field :date %>
   </p>
   <p>
-    <%= f.label :invoice %><br />
+    Invoice Date<br/>
     <%= f.text_field :invoice %>
   </p>
   <p>
-    <%= f.label :shipped %><br />
+    $ Shipped and invoiced<br/>
     <%= f.text_field :shipped %>
   </p>
   <p>
@@ -40,11 +43,11 @@
     <%= f.text_field :margin %>
   </p>
   <p>
-    <%= f.label :commissions %><br />
+    Commissions Paid <br/>
     <%= f.text_field :commissions %>
   </p>
   <p>
-    <%= f.label :paid %><br />
+    Paid Date <br/>
     <%= f.text_field :paid %>
   </p>
   <p>
