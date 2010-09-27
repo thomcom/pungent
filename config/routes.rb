@@ -7,7 +7,11 @@ ActionController::Routing::Routes.draw do |map|
   map.signout '/signout',         :controller => 'sessions', :action=>'destroy'
   map.chpass  '/change_password', :controller => 'sessions', :action=>'chpassword'
 
+<<<<<<< HEAD
   map.root :controller => 'sessions', :action => 'new'
+=======
+  map.root :controller => 'sessions', :action => 'enter'
+>>>>>>> 6993742... Everything except authentication is 99%
 
   # The priority is based upon order of creation: first created -> highest priority.
 

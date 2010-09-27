@@ -2,6 +2,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.xml
   def index
+<<<<<<< HEAD
     if signed_in?
       user = @current_user
       if user.is_admin?
@@ -14,6 +15,22 @@ class JobsController < ApplicationController
         format.html # index.html.erb
         format.xml  { render :xml => @jobs }
       end
+=======
+    user = user_from_remember_token
+    if user.nil?
+       redirect_to :signin
+    end
+    if user.is_admin?
+       @jobs = Job.all
+    else
+       @jobs = Job.find_all_by_rep(user.repID)
+    end
+
+    #@jobs = Job.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @jobs }
+>>>>>>> 6993742... Everything except authentication is 99%
     end
   end
 

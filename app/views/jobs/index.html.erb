@@ -24,7 +24,11 @@
   </tr>
 
 <% if @jobs.nil? %>
+<<<<<<< HEAD
 <%   user = @current_user %>
+=======
+<%   user = user_from_remember_token %>
+>>>>>>> 6993742... Everything except authentication is 99%
 <div id="nojobs"><%=   h 'No jobs for '+user.name+'<'+user.email+'>, rep ID: '+user.repID %><br/></div>
 <% else %>
 <% @jobs.each do |job| %>

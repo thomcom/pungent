@@ -41,7 +41,11 @@ class User < ActiveRecord::Base
       save_without_validation
    end
    def is_admin?
+<<<<<<< HEAD
       return 1 == self.admin
+=======
+      1 == :admin
+>>>>>>> 6993742... Everything except authentication is 99%
    end
    def self.authenticate(email,submitted_password)
       user = find_by_email(email)

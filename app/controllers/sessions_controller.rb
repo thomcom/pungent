@@ -12,7 +12,11 @@ class SessionsController < ApplicationController
         render 'new'
      else
         sign_in user
+<<<<<<< HEAD
         redirect_to :jobs, :action => :new
+=======
+        redirect_to :jobs
+>>>>>>> 6993742... Everything except authentication is 99%
      end
   end
 
@@ -31,5 +35,13 @@ class SessionsController < ApplicationController
   #       redirect_to :jobs
   #    end
   # end
+
+  def enter
+     if user_from_remember_token.nil?
+        redirect_to :signin
+     else
+        redirect_to :jobs
+     end
+  end
 
 end
