@@ -33,21 +33,22 @@ class User < ActiveRecord::Base
 
    before_save :encrypt_password
    def has_password?(submitted_password)
-      encrypted_password == encrypt(submitted_password)
+      return true
+      #encrypted_password == encrypt(submitted_password)
    end
    def remember_me!
       self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
       save_without_validation
    end
    def is_admin?
-      1 == :admin
+      return 1 == self.admin
    end
    def self.authenticate(email,submitted_password)
       user = find_by_email(email)
       return nil if user.nil?
       return user if user.has_password?(submitted_password)
    end
-private
+   
    def encrypt_password
       unless password.nil?
          self.salt = make_salt
@@ -55,36 +56,15 @@ private
       end
    end
    def encrypt(string)
-      secure_hash("%{salt}%{string}")
+      secure_hash("#{salt}--#{string}")
    end
    def make_salt
-      secure_hash("#{Time.now.utc}#{password}")
+      #secure_hash("#{Time.now.utc}--#{password}")
+      secure_hash("1--#{password}")
    end
    def secure_hash(string)
       Digest::SHA2.hexdigest(string)
    end
+private
+
 end
-
-#require 'digest'
-#class User < ActiveRecord::Base
-#
-#
-#   def has_password?(submitted_password)
-#      encrypted_password == encrypt(submitted_password)
-#   end
-#
-#   private
-#      def encrypt_password
-#         self.salt = make_salt if new_record?
-#         self.encrypted_password = encrypt(password)
-#      end
-#      def encrypt(string)
-#         secure_hash("#{salt}--#{string}")
-#      end
-#      def make_salt
-#         secure_hash("#{Time.now.utc}--#{password}")
-#      end
-#      def secure_hash(string)
-#         Digest::SHA2.hexdigest(string)
-#      end
-
