@@ -1,3 +1,11 @@
+<h2 id="signin">Signed in</h2>
+<%= @current_user.inspect %>
+<%= debug @current_user %>
+<%= if(signed_in?) then h "WHAT"end%>
+
+
+<% if signed_in? %>
+
 <h1>Listing jobs</h1>
 
 <table>
@@ -16,7 +24,7 @@
   </tr>
 
 <% if @jobs.nil? %>
-<%   user = user_from_remember_token %>
+<%   user = @current_user %>
 <div id="nojobs"><%=   h 'No jobs for '+user.name+'<'+user.email+'>, rep ID: '+user.repID %><br/></div>
 <% else %>
 <% @jobs.each do |job| %>
@@ -43,3 +51,5 @@
 <br />
 
 <%= link_to 'New job', new_job_path %>
+
+<% end %>

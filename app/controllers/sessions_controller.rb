@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         render 'new'
      else
         sign_in user
-        redirect_to :jobs
+        redirect_to :jobs, :action => :new
      end
   end
 
@@ -23,13 +23,13 @@ class SessionsController < ApplicationController
      sign_out
      redirect_to root_path
   end
-
-  def enter
-     if user_from_remember_token.nil?
-        redirect_to :signin
-     else
-        redirect_to :jobs
-     end
-  end
+  # 
+  # def enter
+  #    if user_from_remember_token.nil?
+  #       redirect_to :signin
+  #    else
+  #       redirect_to :jobs
+  #    end
+  # end
 
 end
