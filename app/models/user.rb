@@ -29,8 +29,8 @@ class User < ActiveRecord::Base
    validates_inclusion_of  :admin, :in      => [0,1]
    validates_format_of     :email, :with    => email_regex
 
-   validates_presence_of     :password
-   validates_length_of       :password, :within => 6..40
+   #validates_presence_of     :password
+   #validates_length_of       :password, :within => 6..40
 
    before_save :encrypt_password
    def has_password?(submitted_password)

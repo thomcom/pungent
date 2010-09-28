@@ -18,6 +18,6 @@ class CreateJobs < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :jobs
+     begin drop_table :jobs rescue true end
   end
 end

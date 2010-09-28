@@ -9,13 +9,11 @@ Job #,Rep,Job Name,Buyer,$ Booked but not shipped,  Date,Invoice      Date,$ Shi
 9007,KD,"Wendy's - Nashville, NC",Sechrist,,2/4/09,3/23/09,"7,848",638,319,4/17/09
 9009,DM,"Golden Corral - N Highlands, CA",GC Development,,2/19/09,4/29/09,"72,649","17,295","8,648",5/15/09
 9010,DM,"Golden Corral - Warr Acres, OK",GC Development,,2/19/09,5/15/09,"70,631","19,195","9,598",5/26/09
-
 9012A,PW,"Orsini III - Los Angeles, CA",BLF,,2/27/09,9/11/09,"37,270","5,646","2,823",11/9/09
 9012B,PW,"Orsini III - Los Angeles, CA",BLF,,2/27/09,9/30/09,"46,035","3,291","1,546",11/9/09
 9012C,PW,"Orsini III - Los Angeles, CA",BLF,,2/27/09,10/30/09,"66,175","5,643","2,822",12/4/09
 9012D,PW,"Orsini III - Los Angeles, CA",BLF,,2/27/09,11/30/09,"46,770","8,622","4,311",1/8/10
 9012E,PW,"Orsini III - Los Angeles, CA",BLF,,2/27/09,12/29/09,"12,680","1,924",962,2/5/10
-
 9013,PW,"Railroad Square Phase 1 - San Luis Obispo, CA",SRG,,3/3/09,4/13/09,"13,394",-517,-259,6/12/09
 9014,PW,"LEVR, LLC - Palmdale, CA",HDEC,,3/17/09,3/23/09,"1,802",384,192,6/8/09
 9015,PW,"Orcutt Union Plaza - Orcutt, CA",SRG,,3/19/09,7/31/09,"83,506","12,364","6,182",9/28/09
@@ -29,10 +27,8 @@ Job #,Rep,Job Name,Buyer,$ Booked but not shipped,  Date,Invoice      Date,$ Shi
 9020A,PW,"The Summit - Calabasas, CA",BLF,,4/3/09,9/15/09,"92,625","7,366","3,683",11/11/09
 9020B,PW,"The Summit - Calabasas, CA",BLF,,4/3/09,9/30/09,"1,341",159,80,1/8/10
 9020C,PW,"The Summit - Calabasas, CA",BLF,,4/3/09,11/13/09,"86,376","14,165","7,083",2/10/10
-
-
 9021,JW,"Tim Hortons - Taylor, MI",Tim Hortons,,4/15/09,6/5/09,"8,285","2,237",0,7/20/09
-9022,DM,"Golden Corral - McAllen, TX",GC Development,"70,000",4/24/09,,CANCELLED
+9022,DM,"Golden Corral - McAllen, TX",GC Development,"70,000",4/24/09,,CANCELLED,,,
 9023,PW,Industrial Relations,SRG,,5/7/09,6/18/09,"37,168","7,160","3,580",8/12/09
 9024,VB,St. Regis Hotel - ,Timber Works,,5/26/09,6/15/09,"2,331",400,200,7/7/09
 9024B,VB,"St. Regis Hotel - Park City, UT",Timber Works,,5/26/09,7/31/09,"1,473",194,97,9/3/09
@@ -40,74 +36,56 @@ Job #,Rep,Job Name,Buyer,$ Booked but not shipped,  Date,Invoice      Date,$ Shi
 9024D,VB,"St. Regis Hotel - Park City, UT",Timber Works,,5/26/09,8/21/09,1751,260,130,9/3/09
 9024E,VB,"St. Regis Hotel - Park City, UT",Timber Works,,5/26/09,8/21/09,1798,318,159,9/3/09
 9025,JW,"Tim Hortons - Hamburg, NY",Tim Hortons,,6/12/09,6/30/09,"7,495","1,995",0,7/27/09
-
-
 9028,PW,"Discovery Elemetary - Lancaster, CA",RNP,,7/13/09,9/23/09,"21,326","1,972",986,11/9/09
 9029,DM,"IHOP - Canton, GA",Benchmark,,7/13/09,8/21/09,"13,402","2,960","1,480",9/25/09
 9030,DM,"McDaniel Res. - Morven, GA",McDaniel,,7/14/09,7/31/09,"1,682",0,0,8/10/09
 9031,DM,"Golden Corral - Oklahoma City, OK",McDaniel,,7/15/09,8/31/09,"66,375","17,466","8,733",9/14/09
 9032-01,KD,"Chapman Road Duplexes - Bay Saint Louis, MS",Integrated Const. Services,,7/16/09,8/12/09,"4,500","1,500",750,10/5/09
 9032-02,KD,"Chapman Road Duplexes - Bay Saint Louis, MS",Integrated Const. Services,,7/16/09,10/6/09,300,90,45,10/22/09
-
 9033,BD,"C.H. Harvey - Reno, NV",Reno Truss,,7/17/09,8/28/09,"27,424","2,549","1,275",10/14/09
 9033B,BD,"C.H. Harvey - Reno, NV",Reno Truss,,10/7/09,10/9/09,71,8,4,11/4/09
 9034A,PW,"Long Beach and Burnett - Long Beach, CA",BLF,,7/23/09,12/3/09,"30,000","8,442","4,221",2/8/10
-
 9035,PW,"College Sq. Pads E & E1 - Santa Maria, CA",SRG,,7/24/09,9/11/09,"34,381","6,032","3,016",12/7/09
 9036,VB,"Harris Dental - Smithfield, UT",Ron Peterson,,7/31/09,8/17/09,"9,233","1,615",808,10/27/09
 9037,KD,"Wendy's - Columbus, IN",DG Perry,,8/4/09,9/3/09,"6,963","1,302",651,10/5/09
 9038,KD,"Wendy's - New Philadelphia, OH",Interstate,,8/5/09,8/26/09,"7,183","1,251",626,9/28/09
 9039,BD,"Schwab Res. - Ridgefield, WA  (prelim shops for approval)",Structures NW,,8/6/09,8/1/09,670,0,0,8/6/09
-
 9041A,VB,"Stein-Erikson Lodge Spa Add - Park City, UT",Ron Peterson,,8/12/09,8/17/09,"2,037",415,208,10/27/09
-
-9042,KD,"Wendy's - Pekin, IL",M. S. Carver Lumber,,8/18/09,9/14/09,"7,663",914,457,9/21/09
 9043,BD,"Helm Building - Clackamas, OR",IWP,,8/26/09,10/14/09,"5,116",944,684,10/27/09
 9044,JW,"Tim Hortons - Melvindale, MI",Tim Hortons,,9/4/09,10/14/09,"5,860","1,319",0,10/26/09
 9045,JW,"Tim Hortons - Silvan Lake, MI",Tim Hortons,,9/4/09,10/1/09,"5,860","1,364",0,12/26/09
 9046,DM,"Olive Garden - Bowling Green, KY",Benchmark,,9/8/09,11/12/09,"28,464","10,793","5,397",11/27/09
-
 9048,PW,"Solvang Elem. - Solvang, CA",SRG,,9/8/09,10/30/09,"62,020","7,152","3,576",2/22/10
 9049,DM,"IHOP - Liberty, MO",Benchmark,,9/11/09,12/11/09,"15,738","3,857","1,929",1/25/10
 9049,DM,"IHOP - Liberty, MO",Benchmark,,12/10/09,12/14/09,"2,396",308,154,1/25/10
 9050,BD,"Dustin House - Portland, OR",Dustin Moon,,9/17/09,10/1/09,"4,300",915,458,10/1/09
-
 9052,JW,"Tim Hortons - Buffalo, NY",Tim Hortons,,9/22/09,10/26/09,"5,430","3,065",0,11/30/09
 9051,DM,"Olive Garden - Wenatchee, WA",Reno Truss,,9/21/09,10/30/09,"18,687","4,416","2,208",11/18/09
-
-
 9054,DM,"IHOP - Fayetteville, NC",Patterson McClain,,9/23/09,11/6/09,"12,084","2,653","1,327",1/11/10
 9055A,KD,"Turton Barn - Miamisburg, OH",Matt Turton,,10/13/09,10/16/09,203,38,19,10/19/09
 9055B,KD,"Turton Barn - Miamisburg, OH",Matt Turton,,10/13/09,1/4/10,510,61,30,1/11/10
 9057,PW,"Ketenjian Industrial - Lancaster, CA",Jack Ketenjian,,10/14/09,10/16/09,"4,003",467,234,10/31/09
 9058,DM,"Air Supply - Macon, GA",Walker Const.,,10/28/09,11/3/09,"5,606","2,390","1,195",11/12/09
 9059,BD,"Riverbank - Riverbank, CA",Reno Truss,,10/28/09,11/2/09,"2,435",190,95,12/4/09
-9060,KD,"Value Place - Tucson, AZ",Integrated Const. Services,"60,000",10/30/09,,CANCELLED 3/2/10
+9060,KD,"Value Place - Tucson, AZ",Integrated Const. Services,"60,000",10/30/09,,CANCELLED 3/2/10,,,
 9061,PW,"Santa Monica Stairs - Santa Monica, CA",BLF,,11/4/09,11/18/09,"7,355","1,091",546,2/11/10
-9062,SC,"Woodland Comm. College - Woodland, CA",Newcastle,"2,098",11/5/09,,CANCELLED
+9062,SC,"Woodland Comm. College - Woodland, CA",Newcastle,"2,098",11/5/09,,CANCELLED,,,
 9063,KD,"Hardees - St. Louis, MO",Earll Const.,,11/9/09,1/21/10,"8,757","1,809",905,3/2/10
 9064,KD,"Sonic - Columbia, KY",Branscum Const.,,11/10/09,12/11/09,"3,597",411,206,2/16/10
-
 9066,BD,"Del Taco - Saratoga Springs, UT",Reno Truss,,12/1/09,12/18/09,"13,269","2,281","1,141",12/31/10
 9067,DM,"Beachton Denture Clinic - Thomasville, GA","Morton Buildings, Inc.",,12/10/09,12/29/09,"6,512","1,050",525,1/11/10
 9068,BD,"Sierra Nevada Brewery Add. - Chico, CA",Reno Truss,,12/15/09,1/7/10,"5,920","1,215",608,1/19/10
 9069,PW,"Stallion Ranch- Sunland, CA",BLF,,12/18/09,12/29/09,"12,250",568,284,2/16/10
 9070,DM,"Golden Corral - Augusta, GA",GC Development,,12/28/09,2/5/10,"57,875","4,452","2,226",2/16/10
 9071,DM,"Golden Corral - Florence, SC",GC Development,,12/28/09,2/5/10,"24,127","5,453","2,727",2/16/10
-
 9073,PW,"HWI Studio - Burbank, CA",Tru Trus,,12/29/09,1/19/10,"26,052","4,238","2,119",2/1/10
-
 10001,JW,"Kalahari Remodel - Apple Valley, MN",Bluelinx,,1/4/10,2/15/10,880,487,0,3/2/10
-
-10016,SC,"Trader Joe's - Davis, CA",Hausmann,"11,500",3/5/10,,CANCELLED 3/10/10
-
-Jobs in Progress (commissions due)
-
-7044,PW,"Office Warehouse - Lancaster, CA",RNP,"145,000",4/20/07
-7102,PW,"Del Monte - Santa Barbara, CA",Kizer Const.,"10,593",9/5/07
-8039,PW,"Burbank Offices - Burbank, CA",RNP,"19,995",3/20/08
-8057,RH,"West Side Plaza - San Bernardino, CA",Pagliaro,"30,988",5/20/08
-8090,RH,"Del Norte Mezzanine - Oxnard, CA",EFS,"17,300",7/29/08
+10016,SC,"Trader Joe's - Davis, CA",Hausmann,"11,500",3/5/10,,CANCELLED 3/10/10,,,
+7044,PW,"Office Warehouse - Lancaster, CA",RNP,"145,000",4/20/07,,,,,
+7102,PW,"Del Monte - Santa Barbara, CA",Kizer Const.,"10,593",9/5/07,,,,,
+8039,PW,"Burbank Offices - Burbank, CA",RNP,"19,995",3/20/08,,,,,
+8057,RH,"West Side Plaza - San Bernardino, CA",Pagliaro,"30,988",5/20/08,,,,,
+8090,RH,"Del Norte Mezzanine - Oxnard, CA",EFS,"17,300",7/29/08,,,,,
 8092A,RH,"Jefferson Square - La Quinta, CA",Pagliaro,,7/30/08,10/16/08,"7,165",0,0
 8092B,RH,"Jefferson Square - La Quinta, CA",Pagliaro,,7/30/08,11/13/08,"27,434","4,517",0
 8146,RH,"Lake Forest Gateway 6A, 6B",Pagliaro,"19,701",12/16/08
