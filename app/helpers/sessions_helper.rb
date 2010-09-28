@@ -13,12 +13,7 @@ module SessionsHelper
       User.find_by_remember_token(remember_token) unless remember_token.nil?
    end
    def signed_in?
-<<<<<<< HEAD
-      !@current_user.nil?
-=======
-      user_from_remember_token
-      #!@current_user.nil?
->>>>>>> 6993742... Everything except authentication is 99%
+      !user_from_remember_token.nil?
    end
    def sign_out
       cookies.delete(:remember_token)

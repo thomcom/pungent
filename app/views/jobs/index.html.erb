@@ -1,8 +1,7 @@
 <h2 id="signin">Signed in</h2>
-<%= @current_user.inspect %>
-<%= debug @current_user %>
+<%= user_from_remember_token.inspect %>
+<%= debug user_from_remember_token %>
 <%= if(signed_in?) then h "WHAT"end%>
-
 
 <% if signed_in? %>
 
@@ -23,13 +22,10 @@
     <th>Paid</th>
   </tr>
 
+<!-- Non-Admin User Has No Jobs -->
 <% if @jobs.nil? %>
-<<<<<<< HEAD
-<%   user = @current_user %>
-=======
 <%   user = user_from_remember_token %>
->>>>>>> 6993742... Everything except authentication is 99%
-<div id="nojobs"><%=   h 'No jobs for '+user.name+'<'+user.email+'>, rep ID: '+user.repID %><br/></div>
+<div id="nojobs"><%= h 'No jobs for '+user.name+'<'+user.email+'>, rep ID: '+user.repID %><br/></div>
 <% else %>
 <% @jobs.each do |job| %>
   <tr>
@@ -51,7 +47,7 @@
 <% end %>
 <% end %>
 </table>
-
+<%= h "Number of jobs: " + @jobs.size.to_s %>
 <br />
 
 <%= link_to 'New job', new_job_path %>

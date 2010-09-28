@@ -12,11 +12,7 @@ class SessionsController < ApplicationController
         render 'new'
      else
         sign_in user
-<<<<<<< HEAD
-        redirect_to :jobs, :action => :new
-=======
         redirect_to :jobs
->>>>>>> 6993742... Everything except authentication is 99%
      end
   end
 

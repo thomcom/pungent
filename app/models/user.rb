@@ -18,6 +18,7 @@
 
 require 'digest'
 class User < ActiveRecord::Base
+  
    email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
    attr_accessor :password
    attr_accessible :name, :email, :phone, :repID, :admin, :password, :password_encrypted
@@ -33,19 +34,14 @@ class User < ActiveRecord::Base
 
    before_save :encrypt_password
    def has_password?(submitted_password)
-      return true
-      #encrypted_password == encrypt(submitted_password)
+      encrypted_password == encrypt(submitted_password)
    end
    def remember_me!
       self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
       save_without_validation
    end
    def is_admin?
-<<<<<<< HEAD
       return 1 == self.admin
-=======
-      1 == :admin
->>>>>>> 6993742... Everything except authentication is 99%
    end
    def self.authenticate(email,submitted_password)
       user = find_by_email(email)
