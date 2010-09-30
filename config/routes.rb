@@ -1,11 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :jobs
+  #map.connect "jobs/:action", :controller => 'jobs', :action => /[a-z]+/i
+  #map.connect "jobs/:action", :controller => 'jobs', :action => 'save'
+  map.resources :jobs, :only=>[:index,:show,:new,:save,:edit,:create,:update,:destroy]
   map.resources :users
   map.resources :sessions, :only => [:new, :create, :destroy, :chpassword, :enter]
 
   map.signin  '/signin',          :controller => 'sessions', :action=>'new'
   map.signout '/signout',         :controller => 'sessions', :action=>'destroy'
   map.chpass  '/change_password', :controller => 'sessions', :action=>'chpassword'
+  map.save    '/save',            :controller => 'jobs',     :action=>'save'
 
   map.root :controller => 'sessions', :action => 'enter'
 

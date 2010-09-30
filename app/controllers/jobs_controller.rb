@@ -6,11 +6,7 @@ class JobsController < ApplicationController
     if user.nil?
        redirect_to :signin
     end
-    if user.is_admin?
-       @jobs = Job.all
-    else
-       @jobs = Job.find_all_by_rep(user.repID)
-    end
+    @jobs = getJobs(user)
 
     #@jobs = Job.all
     respond_to do |format|
@@ -38,6 +34,18 @@ class JobsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @job }
+    end
+  end
+
+  # GET /jobs/save
+  # GET /jobs/save.xml
+  def save
+    user = user_from_remember_token
+    @job = getJobs(user)
+    respond_to do |format|
+      #format.html { render :partial => 'save.txt' }#save.html.erb
+      format.html {render :partial => 'save' }
+      #format.xml { render :xml => @job }
     end
   end
 

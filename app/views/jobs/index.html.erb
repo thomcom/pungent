@@ -1,4 +1,4 @@
-<h2 id="signin">Signed in</h2>
+<h2 id="jobs">Jobs</h2>
 <%#= user_from_remember_token.inspect %>
 <%#= debug user_from_remember_token %>
 <%#= if(signed_in?) then h "WHAT"end%>
@@ -51,5 +51,6 @@
 <br />
 
 <%= link_to 'New job', new_job_path %>
+<%= link_to 'Save to CSV', "save" %>
 
 <% end %>

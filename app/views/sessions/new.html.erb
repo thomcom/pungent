@@ -1,8 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<body>
 <h2 id="signin">Sign in</h2>
 <% form_for(:session, :url => sessions_path) do |f| %>
    <div class="field">
       <%= f.label :email %><br/>
-      <%=f.text_field :email %>
+      <%= f.text_field :email %>
    </div>
    <div class="field">
       <%= f.label :password %><br/>
@@ -13,3 +17,5 @@
    </div>
 <% end %>
 
+</body>
+</html>
