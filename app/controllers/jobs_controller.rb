@@ -45,7 +45,7 @@ class JobsController < ApplicationController
     respond_to do |format|
       #format.html { render :partial => 'save.txt' }#save.html.erb
       format.html {render :partial => 'save' }
-      #format.xml { render :xml => @job }
+      format.xml { render :xml => @job }
     end
   end
 
