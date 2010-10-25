@@ -61,6 +61,7 @@ class JobsController < ApplicationController
 
     respond_to do |format|
       if @job.save
+        MyMailer::deliver_mail(@job)
         format.html { redirect_to(@job, :notice => 'Job was successfully created.') }
         format.xml  { render :xml => @job, :status => :created, :location => @job }
       else

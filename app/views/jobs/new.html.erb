@@ -12,9 +12,10 @@
   </p>    
   <p>
     Job #:<br/>
-    <% newest = Job.find_by_sql('SELECT MAX(id) from jobs')%>
-    <% all = Job.all %>
-    <%= f.text_field :jobID, :value=>new_job_id.to_s[-2..3]+all.size.to_s%>
+    <% #newest = Job.find_by_sql('SELECT MAX(id) from jobs')%>
+    <% num_current_year = new_job_id.to_s[-2..3]%>
+    <% job_num          = Job.find(:all,:conditions=>"jobID LIKE '#{num_current_year}%'").size %>
+    <%= f.text_field :jobID, :value=>num_current_year+"%03d"%job_num.to_s%>
   </p>
   <p>
     Job Name:<br/>

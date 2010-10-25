@@ -6,17 +6,7 @@ RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
-#ActionMailer::Base.server_settings = {
-#:address => "mail.electrictextiles.com",
-#:port => 25,
-#:domain => "electrictextiles.com",
-#:authentication => :login,
-#:user_name => "admin",
-#:password => "vr0cgX!2"
-#}
-
 Rails::Initializer.run do |config|
-#  config.action_mailer.delivery_method = :smtp
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
@@ -36,7 +26,7 @@ Rails::Initializer.run do |config|
 
   # Skip frameworks you're not going to use. To use Rails without a database,
   # you must remove the Active Record framework.
-  # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
+  #config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
 
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
@@ -49,3 +39,14 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.raise_delivery_errors = true
+ActionMailer::Base.smtp_settings = {
+  :address => "smtpout.secureserver.net",
+  :port => 25,
+  :domain => "www.electrictextiles.com",
+  :authentication => :plain,
+  :user_name => "admin@electrictextiles.com",
+  :password => "vr0cgX!2"
+}

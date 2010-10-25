@@ -1,6 +1,2 @@
-<? header("Content-Type: text/plain"); ?>
-<pre><% if signed_in? %><%user = user_from_remember_token%><%@job = getJobs(user)%>
-Jobid, Rep, Name, Buyer, Booked, Date, Invoice, Shipped, Margin, Commissions, Paid
-<% @jobs.each do |job| %>"<%=h job.jobID %>", "<%=h job.rep %>", "<%=h job.name %>", "<%=h job.buyer %>", "<%=h job.booked %>", "<%=h job.date %>", "<%=h job.invoice %>", "<%=h job.shipped %>", "<%=h job.margin %>", "<%=h job.commissions %>", "<%=h job.paid %>"
-<% end %><% end %>
-</pre>
+"Jobid", "Rep", "Name", "Buyer", "Booked", "Date", "Invoice", "Shipped", "Margin", "Commissions", "Paid"
+<% if signed_in? %><%user = user_from_remember_token;@job = getJobs(user);response.headers['Content-Type'] = 'text/csv';@jobs.each do |job| %>"<%=h job.jobID %>", "<%=h job.rep %>", "<%=h job.name %>", "<%=h job.buyer %>", "<%=h job.booked %>", "<%=h job.date %>", "<%=h job.invoice %>", "<%=h job.shipped %>", "<%=h job.margin %>", "<%=h job.commissions %>", "<%=h job.paid %>"<% end %><% end %>
