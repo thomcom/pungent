@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
      else
         sign_in user
         redirect_to :jobs
+        #redirect_to(@jobs, { :notice => "" })
      end
   end
 
@@ -29,6 +30,7 @@ class SessionsController < ApplicationController
         redirect_to :signin
      else
         redirect_to :jobs
+        #redirect_to(@jobs,  { :notice => "" })
      end
   end
 
